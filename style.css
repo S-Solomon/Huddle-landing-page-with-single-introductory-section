@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap');
+
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image:  url(./images/bg-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-color: hsl(257, 40%, 49%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 1.4em;
+
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    opacity: 0.8;
+    padding: 20px 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    margin: auto;
+    width: 1440px;
+    max-width: 100%;
+}
+
+.flex {
+    display: flex;
+    margin: 100px 0;
+}
+
+
+
+.flex > div:first-child {
+    flex: 0.6;
+    margin-right: 0px;
+}
+
+.flex > div:last-child {
+    margin-left: 0px;
+    flex: 0.4;
+}
+
+button {
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    border-radius: 50px;
+    border: none;
+    padding: 15px 70px;
+    font-size: 24px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    margin: 20px 0;
+}
+
+
+.social-links {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    list-style: none;
+}
+
+.social-links a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .flex {
+        flex-direction: column;
+        margin-top: 50px 0;
+    }
+
+    .flex > div:first-child {
+        flex: 1;
+        margin-right: 0;
+    }
+
+    .flex > div:last-child {
+        flex: 1;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+    button {
+        font-size: 1rem;
+    }
+    .container {
+        margin: 0 30px;
+    }
+}
